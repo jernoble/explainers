@@ -59,6 +59,14 @@ partial interface HTMLMediaElement {
 
 `showCaptionSettings()`, when called, will place a caption display settings menu on the screen. If applicable, it will position the menu in such a way that it is adjacent to the `options.anchorNode` provided, at the area indicated by `options.positionArea`, which are both defined in [CSS Anchor Position](https://drafts.csswg.org/css-anchor-position/). The returned promise will resolve once the user has made an affirmative caption display settings choice, or has otherwise closed the display settings menu.
 
+The menu must provide the following behaviors:
+- The menu will provide a list of selectable "styles", matching the list provided by the operating system.
+- The currently selected menu item will match the operating system's currently selected "style".
+- Any active cues from any `TextTrack`s will have their rendering surpressed. 
+- A synthenic "cue" will be provided as if it were an active cue from a displaying `TextTrack`.
+- Selecting a "style" will update the rendering of the synthetic cue, allowing that style to be "previewed".
+- Once the user has made an affirmative style selection choice, the menu will close, and the returned `Promise` will r esolve.
+
 Example:
 
 ```js
