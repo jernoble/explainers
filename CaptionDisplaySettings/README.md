@@ -65,7 +65,7 @@ The menu must provide the following behaviors:
 - Any active cues from any `TextTrack`s will have their rendering surpressed. 
 - A synthenic "cue" will be provided as if it were an active cue from a displaying `TextTrack`.
 - Selecting a "style" will update the rendering of the synthetic cue, allowing that style to be "previewed".
-- Once the user has made an affirmative style selection choice, the menu will close, and the returned `Promise` will r esolve.
+- Once the user has made an affirmative style selection choice, the menu will close, and the returned `Promise` will resolve.
 
 Example:
 
@@ -82,7 +82,7 @@ Example:
 
 ## Alternative Considered Usage
 
-One alternative briefly considered was to expose the users' list of preferred caption styles, their attributes, and all settings directly to web apps through a expansive set of APIs. However, this would dramatically increase te ability of sites to [passively fingerprint](https://www.w3.org/TR/fingerprinting-guidance/#passive) users, and was dismissed as an unacceptable privacy risk.
+One alternative briefly considered was to expose the users' list of preferred caption styles, their attributes, and all settings directly to web apps through a expansive set of APIs. However, this would dramatically increase the ability of sites to [passively fingerprint](https://www.w3.org/TR/fingerprinting-guidance/#passive) users, and was dismissed as an unacceptable privacy risk.
 
 ## References
 
@@ -91,4 +91,3 @@ One alternative briefly considered was to expose the users' list of preferred ca
 [^§III.B.1.24]: [FCC 24-79, §III.B.1.24] https://docs.fcc.gov/public/attachments/FCC-24-79A1.pdf
 [^§III.B.1.26]: [FCC 24-79, §III.B.1.26] https://docs.fcc.gov/public/attachments/FCC-24-79A1.pdf
 [^§III.B.1.27]: [FCC 24-79, §III.B.1.27] https://docs.fcc.gov/public/attachments/FCC-24-79A1.pdf
-[^§III.B.1.28]: [FCC 24-79, §III.B.1.28] https://docs.fcc.gov/public/attachments/FCC-24-79A1.pdf
