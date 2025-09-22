@@ -25,22 +25,22 @@ The primary use case is to enable a web application which is covered by the regu
 The following concepts are used in the FCC regulation:
 
 "Proximity"
-: The FCC regulation requires [^§III.B.1.24] that apps “will place ... the closed caption display settings ... in one area of the
+* The FCC regulation requires [^§III.B.1.24] that apps “will place ... the closed caption display settings ... in one area of the
 settings ... that is accessed via a means reasonably comparable to a button, key, or icon.”
-: Web apps may choose to meet this requirement by adding a button or menu item to their custom playback controls which calls into this new Web API
+* Web apps may choose to meet this requirement by adding a button or menu item to their custom playback controls which calls into this new Web API
 
 "Discoverability"
-: The FCC regulation requires [^§III.B.1.26] usability testing to be performed in order to ensure the caption display settings are discoverable.
+* The FCC regulation requires [^§III.B.1.26] usability testing to be performed in order to ensure the caption display settings are discoverable.
 
 "Previewability"
-: The FCC regulation requires [^§III.B.1.27] that users "are able to preview the appearance of closed captions on
+* The FCC regulation requires [^§III.B.1.27] that users "are able to preview the appearance of closed captions on
 programming on their screen while changing the closed captioning display settings".
-: The responsibility for meeting this factor falls upon the UA, which will show placeholder captions while the caption display settings menu is visible, and will adjust the styling of that placeholder as the user chooses settings.
+* The responsibility for meeting this factor falls upon the UA, which will show placeholder captions while the caption display settings menu is visible, and will adjust the styling of that placeholder as the user chooses settings.
 
 "Consistency and Persistence"
-: The FCC regulation requires [^§III.B.1.28] that devices provide access to caption display settings via an API accessible to applications, and that covered distributors will use "the operating system-level closed caption settings of the [apparatus] upon launch of the app on the device".
-: The proposed web API is intended to be the mechanism by which both devices will provide access to caption display settings.
-: Support for distributors applying "operating system-level closed caption settings" is out of scope of this proposal, however the web platform already includes support for applying those settings via TextTracks, when UAs which apply OS settings to TextTrack rendering.
+* The FCC regulation requires [^§III.B.1.28] that devices provide access to caption display settings via an API accessible to applications, and that covered distributors will use "the operating system-level closed caption settings of the [apparatus] upon launch of the app on the device".
+* The proposed web API is intended to be the mechanism by which both devices will provide access to caption display settings.
+* Support for distributors applying "operating system-level closed caption settings" is out of scope of this proposal, however the web platform already includes support for applying those settings via TextTracks, when UAs which apply OS settings to TextTrack rendering.
 
 ## Usage
 
